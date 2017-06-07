@@ -59,7 +59,7 @@ text.")
   (let ((qr (qrencode-get-qr text)))
     (if current-prefix-arg
         (insert qr)
-      (with-help-window "*QR Code"
+      (with-help-window "*QR Code*"
         (princ qr)))))
 
 ;;;###autoload
